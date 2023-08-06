@@ -4,5 +4,10 @@
 
 if [[ $1 == arg1 ]]
 then
-  echo true
+  for (( i = $1; i > 0; i-- ))
+  do
+    echo $i
+  done
+else
+  echo Include a positive integer as the first argument.
 fi
